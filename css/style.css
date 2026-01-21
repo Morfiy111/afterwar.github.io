@@ -17,6 +17,10 @@ body {
     color: #2F4558;
 }
 
+a {
+    color: #255c7a;
+}
+
 a,
 button {
     transition: all .3s linear;
@@ -79,7 +83,10 @@ h1 {
 .main-block {
     padding: 80px 0;
     background-image: url('../images/6622b4932bbad277281c0a53f210c4bc.png');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
     position: relative;
 }
 
@@ -228,16 +235,73 @@ button.btn-close {
 }
 
 .subtitle-page {
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .page-list-block {
     margin-bottom: 40px;
 }
 
+.blue-block {
+    padding: 40px 0;
+    color: #fff;
+    background-color: #255c7a;
+    margin-bottom: 40px;
+}
+
+.how-we-work-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.how-we-work-item {
+    width: 24%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-we-work-item ul {
+    text-align: left;
+}
+
+.how-we-work-icon i {
+    color: #255c7a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.how-we-work-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.block-center {
+    text-align: center;
+}
+
+.contacts-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contacts-item {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 991px) {
     .navbar-nav {
         justify-content: flex-end;
+    }
+
+    .how-we-work-item {
+        width: 48%;
     }
 }
 
@@ -251,41 +315,49 @@ button.btn-close {
         border-color: #fff;
     }
 
-    .situation-block {
-        flex-direction: column;
+    .about-we {
+        flex-wrap: wrap;
     }
 
-    .situation-title {
-        padding: 40px 40px 100px 40px;
-        border-right: none;
+    .about-we-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacts-item {
+        width: 100%;
+    }
+
+    .footer-flex-block {
+        flex-wrap: wrap;
+    }
+
+    .footer-flex-block .header-logo {
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 583px) {
-    .header-logo {
-        width: 200px;
-    }
 
     h1 {
         font-size: 38px;
     }
+
+    .how-we-work-item {
+        width: 100%;
+    }
 }
 
-@media (max-width: 483px) {
-    .situation-buttons {
-        display: block;
+@media (max-width: 440px) {
+    .header-button {
+        display: none;
     }
 
-    .situation-buttons-left {
-        position: inherit;
-        bottom: 0;
+    .header-block {
+        padding: 20px 0;
     }
 
-    .situation-title {
-        padding: 40px 40px 0px 40px;
-    }
-
-    .header-logo {
-        width: 150px;
+    h1 {
+        font-size: 30px;
     }
 }
