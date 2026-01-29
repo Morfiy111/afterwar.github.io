@@ -91,8 +91,8 @@ h1 {
 }
 
 .main-btn button {
-    background-color: #f65a5b;
-    border: 2px solid #f65a5b;
+    background-color: #fff;
+    border: 2px solid #fff;
     border-radius: 4px;
     padding: 8px 16px;
 }
@@ -258,7 +258,7 @@ button.btn-close {
 }
 
 .how-we-work-item {
-    width: 24%;
+    width: 23%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -293,6 +293,11 @@ button.btn-close {
 .contacts-item {
     width: 48%;
     margin-bottom: 20px;
+}
+
+.registration__agree {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 @media (max-width: 991px) {
